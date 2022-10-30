@@ -21,7 +21,7 @@ const todos = (state = initalState, action) => {
         ],
       };
     case CLEAR_TODO_LIST:
-      return initalState;
+      return { ...initalState, list: [] };
     case DELETE_TODO:
       return {
         ...state,
