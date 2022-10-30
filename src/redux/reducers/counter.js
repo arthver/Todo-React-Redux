@@ -9,7 +9,7 @@ const counter = (state = initalState, action) => {
   switch (action.type) {
     case ADD_COUNTER:
       return {
-        amount: ++state.amount,
+        amount: state.amount + 1,
       };
     case RESET_COUNTER:
       return {

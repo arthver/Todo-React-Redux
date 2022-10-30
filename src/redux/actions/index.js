@@ -7,12 +7,9 @@ import {
   TOGGLE_TODO,
 } from "./actions.types";
 
-let count = 0;
-
 export const addCounter = () => {
   return {
     type: ADD_COUNTER,
-    count: ++count,
   };
 };
 
